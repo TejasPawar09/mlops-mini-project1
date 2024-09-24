@@ -8,7 +8,7 @@ COPY flask_app/requirements.txt /app/
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install gunicorn
+
 
 # Copy the application code and model files
 COPY flask_app/ /app/
